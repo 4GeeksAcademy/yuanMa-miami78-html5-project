@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Payment form example</h1>
+      <hr />
+      <div class="remind">
+        <h3>Some fields are missing</h3>
+      </div>
+      <div class="cardInfo">
+        <div class="cardNumber">
+          <label for="card-number">Card #</label>
+          <br />
+          <input
+            type="tel"
+            id="card-number"
+            name="card_number"
+            placeholder="XXXXXXXXXXXXXXXX"
+            pattern="\d{16}"
+            maxlength="16"
+            required
+          />
+        </div>
+        <div class="cvcNumber">
+          <label for="cvc">CVC #</label>
+          <br />
+          <input
+            type="tel"
+            id="cvc-number"
+            name="cvc_number"
+            placeholder="0000"
+            pattern="\d{4}"
+            maxlength="4"
+            required
+          />
+        </div>
+        <div class="amount">
+          <label for="moneyAmount"
+            >Amount
+            <br />
+            $
+          </label>
+          <input type="text" placeholder="Amount" />
+        </div>
+      </div>
+      <div class="personInfo">
+        <div class="firstname">
+          <label for="firstname">First Name</label>
+          <br />
+          <input type="text" />
+        </div>
+        <div class="lastname">
+          <label for="lastname">Last Name</label>
+          <br />
+          <input type="text" />
+        </div>
+      </div>
+      <!--third line of address info-->
+      <div class="addressInfo">
+        <div class="city">
+          <label for="city">City</label>
+          <br />
+          <input type="text" />
+        </div>
+        <div class="state">
+          <label for="state">State</label>
+          <br />
+          <select id="state" name="state" required>
+            <option value="" disabled selected>Pick a state</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </div>
+        <div class="postalcode">
+          <label for="postalcode">postal code </label>
+          <br />
+          <input type="text" placeholder="" />
+        </div>
+      </div>
+      <div class="bodyEnd">
+        <!-- those icons from icons8.com-->
+        <div class="cardType">
+          <label for="cardChoice">We accept:</label>
+          <br />
+          <div class="allIcons">
+            <input type="radio" name="cardtype" id="" /><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M 4 4 C 2.895 4 2 4.895 2 6 L 2 18 C 2 19.105 2.895 20 4 20 L 20 20 C 21.105 20 22 19.105 22 18 L 22 6 C 22 4.895 21.105 4 20 4 L 4 4 z M 4 6 L 20 6 L 20 18 L 4 18 L 4 6 z M 13.947266 9.4824219 C 12.646266 9.4824219 12.039062 10.177031 12.039062 10.957031 C 12.039062 12.518031 13.773437 12.257109 13.773438 13.037109 C 13.773438 13.210109 13.685187 13.470703 12.992188 13.470703 C 12.298187 13.470703 11.779297 13.210938 11.779297 13.210938 L 11.605469 14.251953 C 11.605469 14.251953 12.03925 14.511719 12.90625 14.511719 C 13.68625 14.598719 14.900391 13.903281 14.900391 12.863281 C 14.900391 11.649281 13.167969 11.562078 13.167969 10.955078 C 13.167969 10.695078 13.340266 10.435547 13.947266 10.435547 C 14.380266 10.435547 14.814453 10.783203 14.814453 10.783203 L 15.074219 9.7421875 C 15.074219 9.7421875 14.467266 9.4824219 13.947266 9.4824219 z M 8.484375 9.5683594 L 7.3574219 13.037109 C 7.3574219 13.037109 7.2714844 12.777516 7.2714844 12.603516 C 6.6644844 11.129516 5.6230469 10.521484 5.6230469 10.521484 L 6.578125 14.423828 L 7.8789062 14.423828 L 9.6992188 9.5683594 L 8.484375 9.5683594 z M 16.894531 9.5683594 L 14.900391 14.423828 L 16.115234 14.423828 L 16.375 13.730469 L 17.935547 13.730469 L 18.109375 14.423828 L 19.150391 14.423828 L 18.195312 9.5683594 L 16.894531 9.5683594 z M 4.1503906 9.6542969 C 4.1503906 9.6542969 6.6645469 10.435859 7.1855469 12.255859 L 6.7519531 10.087891 C 6.7519531 10.087891 6.5776406 9.6542969 6.0566406 9.6542969 L 4.1503906 9.6542969 z M 10.21875 9.6542969 L 9.5253906 14.511719 L 10.740234 14.511719 L 11.519531 9.6542969 L 10.21875 9.6542969 z M 17.330078 11.042969 L 17.677734 12.863281 L 16.636719 12.863281 L 17.330078 11.042969 z"
+              ></path>
+            </svg>
+            <input type="radio" name="cardtype" value="" /><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 5 7 C 2.25 7 0 9.25 0 12 L 0 38 C 0 40.75 2.25 43 5 43 L 45 43 C 47.75 43 50 40.75 50 38 L 50 12 C 50 9.25 47.75 7 45 7 Z M 5 9 L 45 9 C 46.667969 9 48 10.332031 48 12 L 48 38 C 48 39.667969 46.667969 41 45 41 L 5 41 C 3.332031 41 2 39.667969 2 38 L 2 12 C 2 10.332031 3.332031 9 5 9 Z M 8.5625 19.90625 L 4.84375 28.40625 L 7.0625 28.40625 L 7.875 26.5 L 12.0625 26.5 L 12.875 28.40625 L 17.09375 28.40625 L 17.09375 22.09375 L 19.90625 28.40625 L 21.8125 28.40625 L 24.65625 22.1875 L 24.65625 28.40625 L 26.75 28.40625 L 26.75 19.90625 L 23.40625 19.90625 L 20.84375 25.625 L 18.28125 19.90625 L 15 19.90625 L 15 28.09375 L 11.34375 19.90625 Z M 29.5 19.90625 L 29.5 28.4375 L 37.5 28.4375 L 40 25.59375 L 42.46875 28.4375 L 45.125 28.4375 L 41.375 24.0625 L 45.125 19.90625 L 42.46875 19.90625 L 40.0625 22.5625 L 37.75 19.90625 Z M 9.90625 21.6875 L 11.21875 24.6875 L 8.65625 24.6875 Z M 31.5625 21.71875 L 36.65625 21.75 L 38.6875 24.0625 L 36.40625 26.625 L 31.5625 26.625 L 31.5625 24.9375 L 36.1875 24.9375 L 36.1875 23.3125 L 31.5625 23.3125 Z"
+              ></path>
+            </svg>
+            <input type="radio" value="" name="cardtype" /><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 5 7 C 2.25 7 0 9.25 0 12 L 0 38 C 0 40.75 2.25 43 5 43 L 45 43 C 47.75 43 50 40.75 50 38 L 50 12 C 50 9.25 47.75 7 45 7 Z M 5 9 L 45 9 C 46.667969 9 48 10.332031 48 12 L 48 38 C 48 39.667969 46.667969 41 45 41 L 5 41 C 3.332031 41 2 39.667969 2 38 L 2 12 C 2 10.332031 3.332031 9 5 9 Z M 8.5625 19.90625 L 4.84375 28.40625 L 7.0625 28.40625 L 7.875 26.5 L 12.0625 26.5 L 12.875 28.40625 L 17.09375 28.40625 L 17.09375 22.09375 L 19.90625 28.40625 L 21.8125 28.40625 L 24.65625 22.1875 L 24.65625 28.40625 L 26.75 28.40625 L 26.75 19.90625 L 23.40625 19.90625 L 20.84375 25.625 L 18.28125 19.90625 L 15 19.90625 L 15 28.09375 L 11.34375 19.90625 Z M 29.5 19.90625 L 29.5 28.4375 L 37.5 28.4375 L 40 25.59375 L 42.46875 28.4375 L 45.125 28.4375 L 41.375 24.0625 L 45.125 19.90625 L 42.46875 19.90625 L 40.0625 22.5625 L 37.75 19.90625 Z M 9.90625 21.6875 L 11.21875 24.6875 L 8.65625 24.6875 Z M 31.5625 21.71875 L 36.65625 21.75 L 38.6875 24.0625 L 36.40625 26.625 L 31.5625 26.625 L 31.5625 24.9375 L 36.1875 24.9375 L 36.1875 23.3125 L 31.5625 23.3125 Z"
+              ></path>
+            </svg>
+            <input type="radio" value="" name="cardtype" /><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100"
+              height="100"
+              viewBox="0 0 50 50"
+            >
+              <path
+                d="M 5 7 C 2.25 7 0 9.25 0 12 L 0 38 C 0 40.75 2.25 43 5 43 L 45 43 C 47.75 43 50 40.75 50 38 L 50 12 C 50 9.25 47.75 7 45 7 Z M 5 9 L 45 9 C 46.667969 9 48 10.332031 48 12 L 48 38 C 48 39.667969 46.667969 41 45 41 L 5 41 C 3.332031 41 2 39.667969 2 38 L 2 12 C 2 10.332031 3.332031 9 5 9 Z M 8.5625 19.90625 L 4.84375 28.40625 L 7.0625 28.40625 L 7.875 26.5 L 12.0625 26.5 L 12.875 28.40625 L 17.09375 28.40625 L 17.09375 22.09375 L 19.90625 28.40625 L 21.8125 28.40625 L 24.65625 22.1875 L 24.65625 28.40625 L 26.75 28.40625 L 26.75 19.90625 L 23.40625 19.90625 L 20.84375 25.625 L 18.28125 19.90625 L 15 19.90625 L 15 28.09375 L 11.34375 19.90625 Z M 29.5 19.90625 L 29.5 28.4375 L 37.5 28.4375 L 40 25.59375 L 42.46875 28.4375 L 45.125 28.4375 L 41.375 24.0625 L 45.125 19.90625 L 42.46875 19.90625 L 40.0625 22.5625 L 37.75 19.90625 Z M 9.90625 21.6875 L 11.21875 24.6875 L 8.65625 24.6875 Z M 31.5625 21.71875 L 36.65625 21.75 L 38.6875 24.0625 L 36.40625 26.625 L 31.5625 26.625 L 31.5625 24.9375 L 36.1875 24.9375 L 36.1875 23.3125 L 31.5625 23.3125 Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="message">
+          <label for="">Message</label>
+          <br />
+          <input type="textarea" />
+          <p>Add any notes here.</p>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="button1">Cancel</div>
+        <div class="button2">Send</div>
+      </div>
+    </div>
+  </body>
+</html>

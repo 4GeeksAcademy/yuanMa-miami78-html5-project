@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* background-color: black */
+}
+
+.form {
+    width: 1200px;
+    height: 780px;
+    /* background-color: aliceblue; */
+    margin: 50px auto;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+h1 {
+   margin-left: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   margin-top: 20px;
+
+}
+hr {
+   border-top: 0 solid lightgray;
+    margin-top: 20px;
+}
+.remind {
+    width: 1160px;
+    height: 60px;
+    margin: 30px auto;
+    background-color: lightpink;
+    border: 1px solid lightcoral;
+    border-radius: 3px;
+}
+h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    margin-left: 30px;
+    margin-top: 20px;
+
+}
+.cardInfo {
+    width: 1200px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+  
+}
+.cardNumber {
+    height: 80px;
+    width: 400px ;
+    /* background-color: aqua; */
+    margin-left: 20px;
+    line-height: 30px;
+}
+.cardNumber input {
+height: 30px;
+width: 380px;
+margin-top: 10px;
+border: 1px solid lightgray;
+border-radius: 3px;
+padding-left: 10px;
+}
+.cvcNumber {
+height: 80px;
+width: 300px;
+/* background-color:aquamarine; */
+line-height: 30px;
+}
+.cvcNumber input {
+    height: 30px;
+width: 280px;
+margin-top: 10px;
+border: 1px solid lightgray;
+border-radius: 3px;
+padding-left: 10px;
+}
+.amount {
+    height: 80px;
+    width: 390px;
+
+    line-height: 30px;
+    margin-right: 20px;
+}
+.amount input {
+ height: 30px;
+width: 365px;
+margin-top: 10px;
+border: 1px solid lightgray;
+border-radius: 3px;
+padding-left: 10px;
+
+}
+
+.personInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 1020px;
+    height: 80px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.firstname {
+    height: 80px;
+    width: 400px;
+   line-height: 30px;
+   /* background-color: aqua; */
+}
+.firstname input {
+
+    height: 30px;
+width: 540px;
+margin-top: 10px;
+border: 1px solid lightgray;
+border-radius: 3px;
+}
+
+.lastname {
+    height: 80px;
+    width: 400px;
+   line-height: 30px;
+   /* background-color: aqua; */
+}
+.lastname input {
+
+ height: 30px;
+width: 540px;
+margin-top: 10px;
+border: 1px solid lightgray;
+border-radius: 3px;
+}
+.addressInfo {
+    width: 1200px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+.city {
+    height: 80px;
+    width: 400px ;
+    /* background-color: aqua; */
+    margin-left: 20px;
+    line-height: 30px;
+}
+.city input {
+height: 30px;
+width: 500px;
+margin-top: 10px;
+border: 1px solid lightgray;
+border-radius: 3px;
+}
+.state {
+    height: 80px;
+width: 300px;
+/* background-color:aquamarine; */
+line-height: 30px;
+margin-left: 200px;
+}
+
+.state select {
+    height: 30px;
+    width: 260px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+.postalcode {
+    height: 80px;
+    width: 300px;
+    /* background-color:aquamarine; */
+    line-height: 30px;
+   /* margin-right: 10px; */
+}
+
+.postalcode input{
+    height: 30px;
+    width: 270px;
+    margin-top: 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+.bodyEnd {
+     height: 80px;
+     width: 1000px;
+     display: flex;
+     justify-content: space-between;
+     margin-top: 30px;
+}
+
+.cardType {
+height: 80px;
+width: 500px;
+margin-left: 20px;
+line-height: 50px;
+/* background-color: aquamarine; */
+}
+.allIcons {
+    width: 300px;
+    height: 40px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 3px;
+   }
+   .allIcons input {
+    margin-top: 15px;
+   }
+.cardType svg {
+    width: 30px;
+    height: 30px;
+   margin-top: 5px;
+   margin-right: 20px;
+}
+.message {
+    height: 80px;
+    width: 300px;
+    margin-right: 80px;
+    /* margin-top: 20px; */
+    line-height: 50px;
+}
+.message input {
+    width: 560px;
+    height: 80px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.message p {
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkgrey;
+    position: relative;
+ bottom: 15px;
+   
+}
+.footer {
+    width: 1200px;
+    height: 80px;
+    background-color: lightgray;
+    margin-top: 120px;
+    /* opacity: 0.2; */
+border-top: 1px solid lightgray;
+display: flex;
+justify-content: flex-end;
+
+}
+.footer div {
+    height: 30px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.button1 {
+    background-color: darkgray;
+}
+.button2 {
+    background-color: blue;
+}
